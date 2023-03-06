@@ -27,9 +27,9 @@ export const loadCommand = async() =>{
         actions.set(cmd.command.name,cmd.action )
     }
     await updateSlashCommands(process.env.GUILD_ID,commands)
-    appStore.commandActionMaps = actions
+    appStore.commandsActionMap = actions
 
-    console.log(appStore.commandActionMaps)
+    console.log(appStore.commandsActionMap)
 }
 
 export const loadEvents = async() =>{
