@@ -13,6 +13,7 @@ loadCommand()
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 const appStore = useAppStore()
 appStore.client= client
+export let lists = ['1264 63 -881 主村莊','10671 75 8062 林地府邸']
 
 loadEvents()
 
